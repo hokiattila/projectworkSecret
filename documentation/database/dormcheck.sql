@@ -45,7 +45,7 @@ CREATE TABLE BUILDING(
 -- Create ROOM table with FK to BUILDING
 CREATE TABLE ROOM(
     roomid INT AUTO_INCREMENT PRIMARY KEY,
-    room_code VARCHAR(25) NOT NULL UNIQUE,
+    room_code VARCHAR(25) NULL,
     floor INT NOT NULL,
     block_number INT NULL DEFAULT 1,
     bid INT NOT NULL,
